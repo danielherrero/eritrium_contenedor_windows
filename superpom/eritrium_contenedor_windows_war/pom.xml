@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.dhr.eritrium_contenedor_windows</groupId>
+    <artifactId>superpom</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+ 
+  <artifactId>eritrium_contenedor_windows_war</artifactId>
+  
+  <packaging>war</packaging>
+  <name>eritrium_contenedor_windows_war Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+
+			<groupId>javax</groupId>
+
+			<artifactId>javaee-web-api</artifactId> <!-- TODO DEFINIR EL PROVIDED EN EL SUPERPOM -->
+
+			<version>7.0</version>
+
+			<scope>provided</scope>
+
+		</dependency>
+
+		<dependency>
+
+			<groupId>javax</groupId>
+
+			<artifactId>javaee-api</artifactId> <!-- TODO REFERENCIAR A LA VERSION J2EE DEL SUPERPOM -->
+
+			<version>7.0</version>
+
+			<scope>provided</scope>
+
+		</dependency>
+  </dependencies>
+  <build>
+    <finalName>eritrium_contenedor_windows_war</finalName>
+  </build>
+</project>
