@@ -50,6 +50,7 @@
 		</profile>
 	</profiles>
 	<build>
+		<finalName>eritrium</finalName>
 
 		<plugins>
 
@@ -67,7 +68,7 @@
 
 					<generatedDescriptorLocation>${basedir}/src/main/application/META-INF</generatedDescriptorLocation>
 
-					<displayName>eritrium_contendor_windows_ear</displayName>
+					<displayName>eritrium</displayName>
 
 					<modules>
 
@@ -75,9 +76,9 @@
 
 							<groupId>com.dhr.eritrium_contenedor_windows</groupId>
 							<artifactId>eritrium_contenedor_windows_war</artifactId>
-							<bundleFileName>eritrium_contendor_windows_war.war</bundleFileName>
+							<bundleFileName>eritrium.war</bundleFileName>
 
-							<contextRoot>/eritrium_contendor_windows</contextRoot>
+							<contextRoot>/eritrium</contextRoot>
 
 						</webModule>
 

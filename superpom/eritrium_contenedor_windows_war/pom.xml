@@ -45,6 +45,8 @@
 		</dependency>
   </dependencies>
   <build>
+  <!-- 
     <finalName>eritrium_contenedor_windows_war</finalName>
+    -->
   </build>
 </project>
