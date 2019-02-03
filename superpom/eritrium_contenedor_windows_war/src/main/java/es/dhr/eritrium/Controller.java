@@ -30,24 +30,26 @@ public class Controller extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		response.getWriter().append("*** sesion:" + request.getSession().getId() + "***</br>");
+		response.getWriter().append("<html><body>");
+		response.getWriter().append("*** sesion:" + request.getSession().getId() + "***<br/>");
 		
 		response.getWriter().append("Served att: ").append(request.getContextPath());
-		response.getWriter().append("*** HEADERS ***</br>");
+		response.getWriter().append("*** HEADERS ***<br/>");
 		Enumeration<String> en = request.getHeaderNames();
 		while (en.hasMoreElements()) {
 			String key = en.nextElement();
 			String value = request.getHeader(key);
-			response.getWriter().append(key + ":" + value + "</br>");
+			response.getWriter().append(key + ":" + value + "<br/>");
 		}
-		response.getWriter().append("*** COOKIES ***</br>");
+		response.getWriter().append("*** COOKIES ***<br/>");
 		Cookie[] cookies = request.getCookies();
 		if (cookies != null) {
 			for (Cookie cookie : cookies) {
-				response.getWriter().append(cookie.getName() + ":" + cookie.getValue() + "</br>");
+				response.getWriter().append(cookie.getName() + ":" + cookie.getValue() + "<br/>");
 			}
 		}
-		response.getWriter().append("<a href='" + request.getRequestURL() + "'>Reload</a> </br>");
+		response.getWriter().append("<a href='" + request.getRequestURL() + "'>Reload</a> <br/>");
+		response.getWriter().append("</body></html>");
 	}
 
 	/**
