@@ -33,7 +33,7 @@ public class Controller extends HttpServlet {
 		response.getWriter().append("<html><body>");
 		response.getWriter().append("***** sesion:" + request.getSession().getId() + "*****<br/>");
 		
-		response.getWriter().append("Served att: ").append(request.getContextPath());
+		response.getWriter().append("Served at: ").append(request.getContextPath() + "<br/>");
 		response.getWriter().append("*** HEADERS ***<br/>");
 		Enumeration<String> en = request.getHeaderNames();
 		while (en.hasMoreElements()) {
