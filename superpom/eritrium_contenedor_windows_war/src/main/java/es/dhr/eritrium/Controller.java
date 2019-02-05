@@ -31,7 +31,7 @@ public class Controller extends HttpServlet {
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		response.getWriter().append("<html><body>");
-		response.getWriter().append("*** sesion:" + request.getSession().getId() + "***<br/>");
+		response.getWriter().append("***** sesion:" + request.getSession().getId() + "*****<br/>");
 		
 		response.getWriter().append("Served att: ").append(request.getContextPath());
 		response.getWriter().append("*** HEADERS ***<br/>");
