@@ -23,8 +23,10 @@ dependencies {
     }
 
 }
+def a = ["hola","dani"]
 
 task deploy(type: DeployWildflyTask) {
+
     host = "127.0.0.1"
     port = 9990
     user = "pi"
@@ -33,6 +35,17 @@ task deploy(type: DeployWildflyTask) {
     runtimeName = project.name + "-" + version + ".ear"
     // filepath, here a war example
     file = "${buildDir}/libs/${project.name}-${version}.ear"
+}
+
+task hello{
+    //dependsOn deploy
+    //finalizedBy deploy
+    doLast {
+        println deploy.file
+        a.each{
+            println "tamaño:${it.size()}"
+        }
+    }
 }
 
 description = 'eritrium_contendor_windows_ear Maven Webapp'
