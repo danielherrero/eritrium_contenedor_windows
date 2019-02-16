@@ -2,7 +2,7 @@ package es.dhr.plugins;
 import org.gradle.api.DefaultTask;
 import org.gradle.api.tasks.TaskAction;
 
-public class MiPlugin extends DefaultTask {
+public class MiPluginTask extends DefaultTask {
     private String message;
     private String recipient;
 

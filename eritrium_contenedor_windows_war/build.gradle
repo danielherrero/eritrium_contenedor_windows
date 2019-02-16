@@ -13,6 +13,14 @@ dependencies {
 }
 
 description = 'eritrium_contenedor_windows_war Maven Webapp'
+project.ext{
+    mipropiedad="hola"
+}
+project.ext.set("otra_forma", "otra manera")
+project.mipropiedad="y ahora lo cambio"
+project.otra_forma="y este tambien lo cambio"
+
+
 
 war {
     enabled = true
