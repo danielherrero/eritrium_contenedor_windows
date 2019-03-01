@@ -31,7 +31,7 @@ public class Controller extends HttpServlet {
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		response.getWriter().append("<html><body>");
-		response.getWriter().append("***** @version@ sesion con gradle modificado:" + request.getSession().getId() + "*****<br/>");
+		response.getWriter().append("***** @version@ sesion con gradle modificado en marzo:" + request.getSession().getId() + "*****<br/>");
 		
 		response.getWriter().append("Served at: ").append(request.getContextPath() + "<br/>");
 		response.getWriter().append("*** HEADERS ***<br/>");
