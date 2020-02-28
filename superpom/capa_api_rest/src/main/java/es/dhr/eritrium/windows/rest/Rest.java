@@ -14,6 +14,6 @@ public class Rest {
 	@Path("/test")
 	@Produces(MediaType.TEXT_PLAIN)
 	public Response test() {
-		return Response.ok("Hola desde test").build();
+		return Response.ok("Hola desde test en remoto").build();
 	}
 }
