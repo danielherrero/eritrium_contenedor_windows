@@ -18,5 +18,6 @@
   <modules>
     <module>eritrium_contendor_windows_ear</module>
      <module>eritrium_contenedor_windows_war</module>
+     <module>capa_api_rest</module>
   </modules>
 </project>
