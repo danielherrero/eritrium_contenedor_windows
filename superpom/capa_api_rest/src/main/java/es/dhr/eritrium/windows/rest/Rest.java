@@ -1,5 +1,7 @@
 package es.dhr.eritrium.windows.rest;
 
+import java.util.Date;
+
 import javax.enterprise.context.RequestScoped;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -14,6 +16,6 @@ public class Rest {
 	@Path("/test")
 	@Produces(MediaType.TEXT_PLAIN)
 	public Response test() {
-		return Response.ok("Hola desde test en remoto").build();
+		return Response.ok("Hola desde test en remoto. Hora:" + new Date().toString()).build();
 	}
 }
