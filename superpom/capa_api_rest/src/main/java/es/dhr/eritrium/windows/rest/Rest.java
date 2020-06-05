@@ -16,6 +16,6 @@ public class Rest {
 	@Path("/test")
 	@Produces(MediaType.TEXT_PLAIN)
 	public Response test() {
-		return Response.ok("Hola desde test en remoto recompilado Hora:" + new Date().toString()).build();
+		return Response.ok("Hola desde msi en remoto recompilado Hora:" + new Date().toString()).build();
 	}
 }
